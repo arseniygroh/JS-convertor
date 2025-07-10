@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS conventer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="preloader">
+        <div class="preloader__item"></div>
+    </div>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <a class="header__logo" href="#"><span>J</span><span>S</span> converter</a>
+            </div>
+        </header>
+        <main class="page">
+            <div class="page__converter converter">
+                <div class="converter__container">
+                    <div class="converter__tabs">
+                        <ul class="converter__tabs-list tabs-list">
+                            <li class="tabs__item active">Temperature converter</li>
+                            <li class="tabs__item">Currency converter</li>
+                            <li class="tabs__item">Distance converter</li>
+                        </ul>
+                        <div class="converter__temperature tab-content show" id="temperature">
+                            <div class="tab-content__container temperature__container">
+                                <div class="tab-content__body">
+                                    <div class="tab-content__column">
+                                        <h4 class="tab-content__title">From:</h4>
+                                        <select name="temperatures1" title="temperature">
+                                            <option value="celsious">Celsius (°C)</option>
+                                            <option value="fahrenheit">Fahrenheit (°F)</option>
+                                            <option value="kelvin">Kelvin (K)</option>
+                                        </select>
+                                    </div>
+                                    <div class="tab-content__column">
+                                        <h4 class="tab-content__title">To:</h4>
+                                        <select name="temperatures2" title="temperature">
+                                            <option value="celsious">Celsius (°C)</option>
+                                            <option value="fahrenheit">Fahrenheit (°F)</option>
+                                            <option value="kelvin">Kelvin (K)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="tab-content__form form-tab-content">
+                                    <div class="form-tab-content__input">
+                                        <label for="user-temperature">Enter value to convert</label>
+                                        <input id="user-temperature" type="number">
+                                    </div>
+                                    <button class="tab-content__btn --temperature__btn" type="button">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="converter__currency tab-content" id="currency">
+                            <div class="tab-content__container currency__container">
+                                <div class="tab-content__body">
+                                    <div class="tab-content__column">
+                                        <h4 class="tab-content__title">From:</h4>
+                                        <div class="tab-content__wrapper">
+                                            <select name="currency1" title="currency">
+                                                <option value="USD">Dollar($)</option>
+                                                <option value="EUR">Euro</option>
+                                                <option value="CZK">CZ krona(CZK)</option>
+                                                <option value="PLN">Zloty</option>
+                                            </select>
+                                            <img class="tab-content__image currency1-image" src="images/usa-image.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="tab-content__column">
+                                        <h4 class="tab-content__title">To:</h4>
+                                        <div class="tab-content__wrapper">
+                                            <select name="currency2" title="currency">
+                                                <option value="USD">Dollar($)</option>
+                                                <option value="EUR">Euro</option>
+                                                <option value="CZK">CZ krona(CZK)</option>
+                                                <option value="PLN">Zloty</option>
+                                            </select>
+                                            <img class="currency2-image tab-content__image" src="images/usa-image.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-content__form form-tab-content">
+                                    <div class="form-tab-content__input">
+                                        <label for="user-currency">Enter value to convert</label>
+                                        <input id="user-currency" type="number">
+                                    </div> 
+                                    <button class="tab-content__btn --currency__btn" type="button">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="converter__distance tab-content" id="distance">
+                            <div class="tab-content__container distance__container">
+                                <div class="tab-content__column distance__column">
+                                    <div class="tab-content__box">
+                                        <label for="milimeters">Distance in melimeters:</label>
+                                        <input type="number" class="metric-input" id="milimeters">
+                                    </div>
+                                    <div class="tab-content__box">
+                                        <label for="centimeters">Distance in centimeters:</label>
+                                        <input type="number" class="metric-input" id="centimeters">
+                                    </div>
+                                    <div class="tab-content__box">
+                                        <label for="meters">Distance in meters:</label>
+                                        <input type="number" class="metric-input" id="meters">
+                                    </div>
+                                    <div class="tab-content__box">
+                                        <label for="kilometers">Distance in kilometers:</label>
+                                        <input type="number" class="metric-input" id="kilometers">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <p>Arsenii Hrokh | 3152380</p>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
